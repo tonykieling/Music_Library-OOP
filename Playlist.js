@@ -41,7 +41,7 @@ class Playlist {
 
   // method to delete the track from the playlist, based in its name
   deleteTrack(track) {
-    console.log(`Deleting ${track} from ${this.name}`)
+    console.log(`Deleting "${track.title}" from "${this.name}"`)
     this.tracks = this.tracks.filter((element) => {
       return element != track;
     });
