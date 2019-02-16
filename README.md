@@ -1,15 +1,15 @@
 ## **Orientation**  
-#### **`user_acions.js`**
+#### **1. `user_acions.js`**
 This file contais the operations performed like an user.  
   
 
-#### **`Library.js`**
+#### **2. `Library.js`**
 This is the class definition to Library.  
   
 
-#### **`Playlist.js`**
+#### **3. `Playlist.js`**
 This is the class definition to Playlist.  
   
 
-#### **`Track.js`**
+#### **4. `Track.js`**
 This is the class definition to Track.  
