@@ -30,11 +30,12 @@ playlist3.addTrack(track4);
 playlist3.addTrack(track5);
 playlist3.addTrack(track6);
 playlist3.addTrack(track7);
+
 playlist3.addTrack(track8);
 
 
 // //-- show all information about library
-lib1.showPlaylistsWithTracks();
+// lib1.showPlaylistsWithTracks();
 
 
 // //-- show a particular playlist
@@ -42,10 +43,10 @@ lib1.showPlaylistsWithTracks();
 
 
 // //-- delete and update playlist data
-// playlist1.showTracks();
-// playlist1.deleteTrack(track1);
-// playlist1.showTracks();
-// console.log("track1: ", track1);
+playlist1.showTracks();
+playlist1.deleteTrack(track1);
+playlist1.showTracks();
+console.log("track1: ", track1);
 
 
 // //-- change track data

@@ -8,8 +8,11 @@ class Playlist {
   }
 
   // auxiliary function to update time and rating (used by add and delete methods bellow)
-  _updatingInfo(track) {
-    this.totalDuration += track.length;
+  _updatingInfo(track, action) {
+    // increase or decrease totalDuration
+    (action === "plus") ? this.totalDuration += track.length : this.totalDuration -= track.length;
+
+    // update rating
     let tempRating = 0;
     this.tracks.forEach((track) => tempRating += track.rating);
     this.overallRating = (tempRating / this.tracks.length).toFixed(1);
@@ -19,7 +22,7 @@ class Playlist {
   addTrack(track) {
     this.tracks.push(track);
     //updating info
-    this._updatingInfo(track);
+    this._updatingInfo(track, "plus");
   }
 
   // method to show all tracks for a specific playlist
@@ -46,7 +49,7 @@ class Playlist {
       return element != track;
     });
     //updating info
-    this._updatingInfo(track);
+    this._updatingInfo(track, "minus");
   }
 }
 
