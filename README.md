@@ -1,7 +1,7 @@
 ## **Directions**  
 
 #### **1. `user_acions.js`**
-This file contais the operations performed like an user.
+This file contains the operations performed like an user.
 &nbsp;
 &nbsp;
 &nbsp;
